@@ -1,0 +1,135 @@
+% プロジェクト学習中間報告書書式テンプレート ver.1.0 (iso-2022-jp)
+
+% 両面印刷する場合は `openany' を削除する
+\documentclass[openany,11pt,papersize]{jsbook}
+
+% 報告書提出用スタイルファイル
+%\usepackage[final]{funpro}%最終報告書
+\usepackage[middle]{funpro}%中間報告書
+% 画像ファイル (EPS，EPDF，PNG) を読み込むために
+%\usepackage[dvipdfmx]{graphicx,color}
+
+% 年度の指定
+\thisYear{2018}
+
+% プロジェクト名
+\jProjectName{AIするディープラーニング}
+
+% [簡易版のプロジェクト名]{正式なプロジェクト名}
+% 欧文のプロジェクト名が極端に長い（2行を超える）場合は，短い記述を
+% 任意引数として渡す．
+%\eProjectName[Making Delicious curry]{How to make delicious curry of Hakodate}
+\eProjectName{AI Love Deep Learning Project}
+
+
+% <プロジェクト番号>-<グループ名>
+\ProjectNumber{06}
+
+\begin{document}
+
+%
+% 表紙
+%\maketitle
+%
+
+%\newpage
+\pagestyle{empty}
+
+%表紙
+\input{000-cover.tex}
+
+%前付け
+\frontmatter
+
+% 和文概要
+\input{001-abstractjp.tex}
+
+%英語の概要
+\input{002-abstract.tex}
+
+%目次
+\tableofcontents% 目次
+
+\mainmatter% 本文のはじまり
+
+%
+% 第一章 はじめに
+%
+\chapter{はじめに}
+
+%背景
+\input{111-backgraound.tex}
+
+%問題点
+\input{112-purpose.tex}
+
+%目的
+\input{113-purpose.tex}
+
+%
+% 第二章 プロジェクト学習の概要
+%
+\chapter{グループ課題設定までのプロセス}
+
+%2.1 合同プロジェクト
+\input{210-unitproject.tex}
+
+%2.2 課題の設定
+\input{220-defineWork.tex}
+
+%2.3 課題の割り当て
+\input{230-divideWork.tex}
+
+%2.4 組織形態
+\input{240-organization.tex}
+
+
+%
+% 第三章 活動内容
+%
+\chapter{活動内容}
+
+%
+% Cool Japanimation
+%
+
+%3.1 前期の活動内容
+\input{310-activityContent.tex}
+
+%3.2 前期の個人活動
+\input{320-activityContent.tex}
+%
+% 第四章 開発手法について
+%
+\chapter{開発手法の説明}
+
+%4.1.0 開発プロセスの概要
+\input{410-development.tex}
+
+%
+% 第五章 今後の課題
+%
+\chapter{今後の課題}
+
+%5.1.0 活動内容 CoolJapanimation
+\input{510-activeCoolJapanimation.tex}
+
+%
+% 第六章 まとめ
+%
+\chapter{まとめ}
+
+%6.1.0 Cool Japanimation
+
+
+%6.2.0 Rhyth/Walk
+\input{610-matome.tex}
+
+%\backmatter
+
+% 参考文献
+\input{700-bunken.tex}
+% \begin{thebibliography}{9}
+% \end{thebibliography}
+
+\end{document}
